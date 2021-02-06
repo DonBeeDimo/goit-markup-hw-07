@@ -678,6 +678,7 @@ li {
 .section-title {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
   padding-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: bold;
