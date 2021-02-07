@@ -1,3 +1,5 @@
+@import 'variables'; 
+
 html {
     box-sizing: border-box;
   }
@@ -7,19 +9,11 @@ html {
     box-sizing: border-box;
   }
   
-  :root {
-    --primary-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #2196f3;
-    --background-color: #ffffff;
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --main-font-family: Roboto, sans-serif;
-  }
   
   .page {
-    background-color: var(--background-color);
+    background-color: $background-color;
   
-    font-family: var(--main-font-family);
+    font-family: $main-font-family;
     letter-spacing: 0.02em;
     margin: 0;
   }
@@ -117,18 +111,18 @@ html {
     padding-top: 32px;
     padding-bottom: 32px;
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .site-nav a:hover,
   .site-nav a:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .link {
@@ -146,10 +140,10 @@ html {
     height: 4px;
     border-radius: 2px;
   
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   
     opacity: 0;
-    transition: opacity 250ms var(--timing-function);
+    transition: opacity 250ms $timing-function;
   }
   
   .link.current::after {
@@ -157,7 +151,7 @@ html {
   }
   
   .site-nav .link.current {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .web-link {
@@ -194,35 +188,35 @@ html {
   }
   
   .web-link .link-mail {
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .web-link .link-mail:hover,
   .web-link .link-mail:focus {
     outline: none;
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .web-link .link-tel {
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .web-link .link-tel:hover,
   .web-link .link-tel:focus {
     outline: none;
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
 
@@ -254,7 +248,7 @@ html {
     margin-bottom: 0;
     padding-bottom: 30px;
   
-    color: var(--background-color);
+    color: $background-color;
   
     font-weight: 900;
     font-size: 44px;
@@ -273,8 +267,8 @@ html {
     padding: 10px 32px;
     min-width: 200px;
   
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
   
     font-weight: 700;
     font-size: 16px;
@@ -289,7 +283,7 @@ html {
     margin-top: 0;
     margin-bottom: 50px;
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-weight: 700;
     font-size: 36px;
@@ -351,7 +345,7 @@ html {
     padding-top: 30px;
     padding-bottom: 10px;
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-weight: 700;
     font-size: 14px;
@@ -359,7 +353,7 @@ html {
   }
   
   .paragraph .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     font-weight: 400;
     font-size: 14px;
@@ -412,7 +406,7 @@ html {
   
     padding: 27px 0;
   
-    color: var(--background-color);
+    color: $background-color;
   }
   
   
@@ -437,16 +431,16 @@ html {
     border-radius: 50%;
     margin-top: 16px;
   
-    background-color: var(--background-color);
+    background-color: $background-color;
     color: #afb1b8;
   
-    transition: background-color 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function;
   }
   
   .command-link:hover,
   .command-link:focus {
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
   }
   
   .command-icon {
@@ -470,7 +464,7 @@ html {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   
-    background-color: var(--background-color);
+    background-color: $background-color;
   }
   
   .command-list > .item:nth-child(4n) {
@@ -480,7 +474,7 @@ html {
   .section.command-person {
     margin-bottom: 10px;
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-weight: 500;
     font-size: 16px;
@@ -488,7 +482,7 @@ html {
   }
   
   .command-list .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     font-weight: 400;
     font-size: 16px;
@@ -522,7 +516,7 @@ html {
   
     color: #afb1bb;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .client-logo {
@@ -535,8 +529,8 @@ html {
   
   .logo:hover,
   .logo:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: $accent-color;
+    border-color: $accent-color;
   }
 
 
@@ -576,7 +570,7 @@ a {
     min-width: 73px;
   
     background-color: #f5f4fa;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-family: Roboto;
     font-style: normal;
@@ -586,14 +580,14 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
   
-    transition: background-color 250ms var(--timing-function);
-    transition: color 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function;
+    transition: color 250ms $timing-function;
   }
   
   .filter-nav .nav:hover,
   .filter-nav .nav:focus {
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   
@@ -646,7 +640,7 @@ a {
     padding-left: 24px;
     padding-top: 63px;
   
-    color: var(--background-color);
+    color: $background-color;
   
     font-family: Roboto;
     font-style: normal;
@@ -676,7 +670,7 @@ a {
     padding-bottom: 4px;
     
   
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   
     font-weight: bold;
     font-size: 18px;
@@ -684,7 +678,7 @@ a {
   }
   
   .cart-list .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     font-weight: normal;
     font-size: 16px;
@@ -723,7 +717,7 @@ a {
   }
   
   .footer-web {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway, sans-serif;
   
     font-weight: 700;
@@ -732,7 +726,7 @@ a {
   }
   
   .footer-studio {
-    color: var(--background-color);
+    color: $background-color;
     font-family: Raleway, sans-serif;
   
     font-weight: 700;
@@ -741,13 +735,13 @@ a {
   }
   
   .footer-studio:hover {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .address {
     margin-bottom: 9px;
   
-    color: var(--background-color);
+    color: $background-color;
   
     font-style: normal;
     font-weight: normal;
@@ -766,12 +760,12 @@ a {
     font-size: 14px;
     line-height: 1.71;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .footer-link .footer-mail:hover,
   .footer-link .footer-mail:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .footer-tel {
@@ -782,16 +776,16 @@ a {
     font-size: 14px;
     line-height: 1.71;
   
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
   }
   
   .footer-link .footer-tel:hover,
   .footer-link .footer-tel:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .networks-title {
-    color: var(--background-color);
+    color: $background-color;
   
     font-weight: bold;
     font-size: 14px;
@@ -819,19 +813,19 @@ a {
   
     background-color: rgba(255, 255, 255, 0.1);
   
-    transition: background-color 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function;
   }
   
   .social-link:hover,
   .social-link:focus {
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
   }
   
   .social-icon {
     width: 20px;
     height: 20px;
-    fill: var(--background-color);
+    fill: $background-color;
   }
   
   /* модельное окно */
@@ -862,7 +856,7 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   
-    background-color: var(--background-color);
+    background-color: $background-color;
   }
   
   .modal-btn {
@@ -875,7 +869,7 @@ a {
     border-radius: 50%;
     margin: 8px 8px;
   
-    background: var(--background-color);
+    background: $background-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   
@@ -884,7 +878,7 @@ a {
   
   .modal-btn:hover,
   .modal-btn:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   textarea {
@@ -907,7 +901,7 @@ a {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
   
   .modal-container {
@@ -927,13 +921,13 @@ a {
   }
   
   .form-field input:hover + .modal-icon {
-    color: var(--accent-color);
-    transition: color 250ms var(--timing-function);
+    color: $accent-color;
+    transition: color 250ms $timing-function;
   }
   
   .form-field input:focus + .modal-icon {
-    color: var(--accent-color);
-    transition: color 250ms var(--timing-function);
+    color: $accent-color;
+    transition: color 250ms $timing-function;
   }
   
   .modal-title {
@@ -956,7 +950,7 @@ a {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
   
   .form-field input {
@@ -966,26 +960,26 @@ a {
     margin: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);;
     border-radius: 4px;
-    transition: color 1000ms var(--timing-function);
+    transition: color 1000ms $timing-function;
   
     font-size: 16px;
   
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
+    background-color: $background-color;
+    color: $primary-text-color;
   
     cursor: pointer;
   }
   
   .form-field input:hover,
   .form-field input:focus {
-    border-color: var(--accent-color);
-    transition: color 250ms var(--timing-function);
+    border-color: $accent-color;
+    transition: color 250ms $timing-function;
   }
   
   .form-field textarea:hover,
   .form-field textarea:focus {
-     border-color: var(--accent-color);
-    transition: color 250ms var(--timing-function);
+     border-color: $accent-color;
+    transition: color 250ms $timing-function;
   }
   
   .modal-icon {
@@ -1010,7 +1004,7 @@ a {
   }
   
   .email-title {
-    color: var(--background-color);
+    color: $background-color;
   
     font-weight: bold;
     font-size: 14px;
@@ -1033,7 +1027,7 @@ a {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
   
-    color: var(--background-color);
+    color: $background-color;
     background-color: #2f303a;
   }
   
@@ -1061,8 +1055,8 @@ a {
     min-width: 200px;
     border: none;
   
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
     font-weight: bold;
@@ -1103,7 +1097,7 @@ a {
     line-height: 1.71;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
+    color: $title-text-color;
   
     margin-bottom: 30px;
     
@@ -1131,13 +1125,13 @@ a {
     height: 15px;
     margin-right: 7px;
   
-    border: 2px solid var(--primary-text-color);
+    border: 2px solid $primary-text-color;
     border-radius: 2px;
   }
   
   .checkbox:checked + .checkbox-icon {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: $accent-color;
+    background-color: $accent-color;
     background-image: url("../images/iconcheckminimal.svg");
     background-size: contain;
     background-origin: border-box;
@@ -1145,7 +1139,7 @@ a {
   }
   
   .link-contract {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration-line: underline;
   }
   
@@ -1159,8 +1153,8 @@ a {
     min-width: 200px;
     border: none;
   
-    background-color: var(--accent-color);
-    color: var(--background-color);
+    background-color: $accent-color;
+    color: $background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
     font-weight: bold;
