@@ -1,40 +1,7 @@
-@import 'utils/variables'; 
+@import 'utils/variables';
+@import 'base/defaults'; 
 
-html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before {
-    box-sizing: border-box;
-  }
-  
-  
-  .page {
-    background-color: $background-color;
-  
-    font-family: $main-font-family;
-    letter-spacing: 0.02em;
-    margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  p {
-    padding: 0;
-    margin: 0;
-  }
+
   
   /* утилита спрятать */
   .visually-hidden {
