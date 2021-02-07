@@ -1,0 +1,3 @@
+@mixin transit($color) {
+    transition: color 250ms $timing-function;
+}
