@@ -28,13 +28,13 @@
     background-color: $background-color;
     color: #afb1b8;
   
-    @mixin transit($color);
-  }
-  
-  .command-link:hover,
-  .command-link:focus {
+    @include transit($color);
+
+    &:hover,
+    &:focus {
     background-color: $accent-color;
     color: $background-color;
+  }
   }
   
   .command-icon {

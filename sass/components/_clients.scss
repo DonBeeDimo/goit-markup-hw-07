@@ -23,7 +23,13 @@
   
     color: #afb1bb;
   
-    @mixin transit($color);
+    @include transit($color);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
   }
   
   .client-logo {
@@ -32,10 +38,4 @@
   
   .client-item:not(:last-child) {
     margin-right: 30px;
-  }
-  
-  .logo:hover,
-  .logo:focus {
-    color: $accent-color;
-    border-color: $accent-color;
   }

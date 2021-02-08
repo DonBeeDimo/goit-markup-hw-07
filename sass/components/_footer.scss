@@ -30,13 +30,13 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    &:hover {
+      color: $accent-color;
+    }
   }
   
-  .footer-studio:hover {
-    color: $accent-color;
-  }
-  
-  .address {
+ .address {
     margin-bottom: 9px;
   
     color: $background-color;
@@ -58,12 +58,12 @@
     font-size: 14px;
     line-height: 1.71;
   
-    @mixin transit($color);
-  }
-  
-  .footer-link .footer-mail:hover,
-  .footer-link .footer-mail:focus {
+    @include transit($color);
+
+    &:hover,
+    &:focus {
     color: $accent-color;
+  }
   }
   
   .footer-tel {
@@ -74,12 +74,12 @@
     font-size: 14px;
     line-height: 1.71;
   
-    @mixin transit($color);
-  }
-  
-  .footer-link .footer-tel:hover,
-  .footer-link .footer-tel:focus {
+    @include transit($color);
+
+    &:hover,
+    &:focus {
     color: $accent-color;
+  }
   }
   
   .networks-title {
@@ -112,18 +112,16 @@
     background-color: rgba(255, 255, 255, 0.1);
   
     transition: background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $background-color;
+    }
   }
   
-  .social-link:hover,
-  .social-link:focus {
-    background-color: $accent-color;
-    color: $background-color;
-  }
-  
-  .social-icon {
+ .social-icon {
     width: 20px;
     height: 20px;
     fill: $background-color;
   }
-  
-  
